@@ -23,7 +23,7 @@ students can win prizes.
 
 # Contact Us
 
-Feel free to reach us at `micronetneurips2019@gmail.com` with any questions you might have.
+Feel free to reach us at `micronet-challenge@gmail.com` with any questions you might have.
 
 # Schedule
 
