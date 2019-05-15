@@ -16,7 +16,7 @@ We hope that this competition will help guide future hardware designs, spur the 
 __Submission Deadline:__ Midnight Pacific Time, September 30th, 2019.
 
 # Contact Us
-Feel free to reach contact us at `micronet.challenge@gmail.com` with any questions you might have.
+Feel free to reach contact us at <micronet.challenge@gmail.com> with any questions you might have.
 
 # Organizers
 Trevor Gale - Google Brain  
