@@ -4,6 +4,14 @@ For this iteration of the competition, the efficiency of a model will be measure
 
 In addition to incentivizing the development of efficient models and model compression techniques, we hope this competition provides a forum for more rigorous benchmarking and comparison of existing techniques and for the study of combinations of approaches like sparsity, quantization, distillation, and neural architecture search.
 
+# Motivation & Philosophy
+
+The broader goal of this competition is to incentivize the co-design of neural networks architectures and hardware accelerators. We’re interested in understanding how optimizations and tradeoffs can be made at different levels of the stack to build a more efficient end-to-end system.
+
+An ideal competition for this might entail contestants submitting both neural network architectures and hardware designs on which their architecture would run. However, these skill sets rarely overlap and the hardware design cycle is very long relative to the time it takes to develop neural network architectures. Instead, we plan to measure a suite of theoretical properties of neural network architectures, and to combine them in a way that accurately approximates performance that could be achieved with specialized hardware. Over time, we plan to grow this set of metrics and to refine our scoring system to more accurately capture hardware design constraints.
+
+We hope that this competition will help guide future hardware designs, spur the development of efficient software libraries on existing hardware, and stimulate progress in the development of efficient neural network architectures.
+
 # Contact Us
 Feel free to reach contact us at `micronet.challenge@gmail.com` with any questions you might have.
 
