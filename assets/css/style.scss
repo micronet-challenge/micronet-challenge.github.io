@@ -35,6 +35,7 @@ section {
     }
 
     .credits {
+      min-width: 120px;
       font-size: 14px;
       color: #000000;
       margin-top: -15px;
@@ -43,6 +44,10 @@ section {
         display: inline-block;
 	vertical-align: top;
       }
+
+      &.left {
+        text-align: left;
+      }     
     }
   }
 }
