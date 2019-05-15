@@ -4,9 +4,9 @@ Two factors will be taken into account when scoring an entry:
 
 __1. Parameter Storage:__
 
-### Definition & Counting: The number of parameters that are required to perform inference. In addition to trainable parameters, any values that are needed to perform inference should be counted (e.g., indices for sparse matrix formats). Entries are allowed to assume that their models are quantized to 16-bits at no accuracy penalty. That is to say, entrants can calculate parameter storage for their models as if it were quantized to 16-bits without actually doing the quantization. A 16-bit parameter counts as one parameter. If quantization is performed, a parameter of less than 16-bits will be counted as a fraction of one parameter. For example, an 8-bit parameter counts as ½ a parameter towards the model’s parameter storage requirements.
+_Definition & Counting:_ The number of parameters that are required to perform inference. In addition to trainable parameters, any values that are needed to perform inference should be counted (e.g., indices for sparse matrix formats). Entries are allowed to assume that their models are quantized to 16-bits at no accuracy penalty. That is to say, entrants can calculate parameter storage for their models as if it were quantized to 16-bits without actually doing the quantization. A 16-bit parameter counts as one parameter. If quantization is performed, a parameter of less than 16-bits will be counted as a fraction of one parameter. For example, an 8-bit parameter counts as ½ a parameter towards the model’s parameter storage requirements.
 
-### Rationale: When designing hardware, the number of bits of parameters in a model dictates the number of values that must be moved to and from arithmetic units, how much fast, on-chip memory would be needed to store the model, and the power consumption and chip area requirements for multiplication and addition circuits. 
+_Rationale:_ When designing hardware, the number of bits of parameters in a model dictates the number of values that must be moved to and from arithmetic units, how much fast, on-chip memory would be needed to store the model, and the power consumption and chip area requirements for multiplication and addition circuits. 
 
 Quantization can significantly reduce parameter storage and math requirements, but can be non-trivial to perform in popular deep learning frameworks. Our goal with the system explained above is to balance between rewarding quantization approaches while mitigating the complexity of entering the competition. Without the above rule, it’s likely that all entries would be required to perform some kind of quantization to be competitive.
 
@@ -14,13 +14,13 @@ Parameter efficiency is also an important metric from a modeling perspective, as
 
 __2. Math Operations:__
 
-### Definition & Counting: The mean number of arithmetic operations per example required to perform inference on the test set. Multiplies and additions count separately. Transcendental function evaluations and bitwise operations count as one op. 
+_Definition & Counting:_ The mean number of arithmetic operations per example required to perform inference on the test set. Multiplies and additions count separately. Transcendental function evaluations and bitwise operations count as one op. 
 
 Entries are allowed to assume that their models are quantized to 16-bits at no accuracy penalty. That is to say, entrants can calculate math operations for their models as if it were quantized to 16-bits without actually doing the quantization. A 16-bit operation counts as one operation. If quantization is performed, an operation on data of less than 16-bits will be counted as a fraction of one operation, where the numerator is the maximum number of bits in the inputs of the operation and the denominator is 16. For example, a multiplication operation with one 3-bit and one 5-bit input, with a 7-bit output, will count as 5/16th of an operation. A multiplication operation where one input is 16-bits, the other input is 8-bits and the output is 8-bits will count as one whole op, as the first input is 16-bits.
 
 For WikiText-103, numbers can be calculated on the tokenized version of the test set, and will be averaged per-token. Numbers with WikiText-103 should be calculated with a batch size of 1 sequence, such that no padding is needed to handle variable sequence lengths. Numbers with WikiText-103 should also be calculated as if inference is performed on-line, i.e. tokens are fed sequentially to the model and it must predict the next token prior to receiving it. This is important for architectures that do not have any state (e.g., Transformer).
 
-### Rationale: The number and resolution (bit-width of operands) of mathematical operations dictates how much work has to be done at inference time. Reduced precision can be exploited to save power and chip area.
+_Rationale:_ The number and resolution (bit-width of operands) of mathematical operations dictates how much work has to be done at inference time. Reduced precision can be exploited to save power and chip area.
 
 We count transcendental functions as a single operation under the assumption that they can be accelerated by hardware if necessary.
 
