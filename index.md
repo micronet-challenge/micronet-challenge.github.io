@@ -1,33 +1,36 @@
-# NIPS 2019 Competition: MicroNet
+---
+layout: page
+title: About
+permalink: /about/
+---
 
-Good Things to come...
-
-# Confirmed Entrants
-
-1. Kolmogorov
-2. Shannon
-3. GZIP
+# MicroNet Challenge @ NeurIPS 2019
 
 # Important Dates
 
 * 1 June 2019: Competition Start
 
-# Winners
-
-* TBD
-
-# Prizes
-
-Good stuff, but for students only.  Anyone can enter the competition, but only
-students can win prizes.
-
 # Contact Us
 
-Feel free to reach us at `micronet.challenge@gmail.com` with any questions you might have.
-
-# Schedule
+Feel free to reach contact us at `micronet.challenge@gmail.com` with any questions you might have.
 
 TBD 
 
 # Organizers
-* Good People
+Trevor Gale - Google Brain
+
+Erich Elsen - DeepMind
+
+Olivier Temam - DeepMind
+
+Scott Gray - OpenAI
+
+Jongsoo Park - Facebook
+
+Cliff Young - Google Brain
+
+Sara Hooker - Google Brain
+
+Niki Parmar - Google Brain
+
+Ashish Vaswani - Google Brain
