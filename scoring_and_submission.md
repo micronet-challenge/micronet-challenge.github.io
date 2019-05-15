@@ -41,7 +41,7 @@ To submit, email a link to your GitHub repository to <micronet.challenge@gmail.c
 
 # Appendix
 
-### Maximum Transient Activation Size
+_Maximum Transient Activation Size_
 
 When performing inference, our ability to keep activations and weights in fast, on-chip memory can be a key factor in the runtime of our model. While the number of parameters that must be stored is captured by our above metrics, we do not currently take activation storage requirements into account. 
 
