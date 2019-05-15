@@ -15,9 +15,7 @@ We hope that this competition will help guide future hardware designs, spur the 
 # Tasks
 The competition consists of three different tasks. Contestants are free to submit entries for one, two, or all three tasks. Contestants are allowed to enter up to three models for each task, but will be ranked according to their top entry in each task. Entries can only be trained on the training data for the task they are entered in. No pre-training, or use of auxiliary data is allowed.
 
-Contestants may work together in teams, but each individual is only allowed three entries per task across all the teams they participate with. If an entry is submitted by a team of contestants, and any member of that team has already contributed to three entries, the new entry will be disqualified.
-
-The three tasks are:
+Contestants may work together in teams, but each individual is only allowed three entries per task across all the teams they participate with. If an entry is submitted by a team of contestants, and any member of that team has already contributed to three entries, the new entry will be disqualified. The three tasks are:
 
 [_ImageNet Classification:_](http://image-net.org/index) The de facto standard dataset for image classification. The dataset is composed of 1,281,167 training images and 50,000 development images. Entries are required to achieve 75% top-1 accuracy on the public test set.
 
