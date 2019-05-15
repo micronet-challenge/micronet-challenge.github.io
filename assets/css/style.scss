@@ -51,3 +51,19 @@ section {
     }
   }
 }
+
+@media print, screen and (max-width: 720px) {
+
+  #title {
+    .credits {
+      line-height: 30px;
+      text-align: center;
+      float: none;
+      display: block;
+
+      .center {
+        vertical-align: center;
+      }
+    }
+  }
+}
