@@ -24,13 +24,14 @@ Contestants may work together in teams, but each individual is only allowed thre
 [_WikiText-103 Language Modeling:_](https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/) A language modeling dataset that emphasizes long-term dependencies. Entries will perform the standard language modeling task, predicting the next token from the current one. The dataset is composed of 103 million training words, 217 thousand development words, and 245 thousand testing words. Entries should use the standard word-level vocabulary of 267,735 tokens. Entries are required to achieve a word-level perplexity below 35 on the test set.
 
 # Important Dates
+__Competition Start:__ We'll start accepting submissions on June 1st, 2019.
 __Submission Deadline:__ Midnight Pacific Time, September 30th, 2019.
 
 # Contact Us
 Feel free to reach contact us at <micronet.challenge@gmail.com> with any questions you might have.
 
 # Organizers
-Trevor Gale - Google Brain  
+Trevor Gale - Google Brain
 Erich Elsen - DeepMind  
 Olivier Temam - DeepMind  
 Scott Gray - OpenAI  
