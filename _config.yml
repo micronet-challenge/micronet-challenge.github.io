@@ -1,17 +1,1 @@
-plugins:
-  - jekyll-remote-theme
-
-title: "MicroNet Challenge"
-remote_theme: "diezcami/arctic-fox-theme"
-
-baseurl: "/home"
-url: "https://micronet-challenge.github.io"
-twitter_username: unet_challenge
-github_username: username
-
-# Build settings
-markdown: redcarpet
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+theme: jekyll-theme-midnight
