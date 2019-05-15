@@ -17,6 +17,14 @@ code {
   color:#000000;
 }
 
+a {
+  color:#000000;
+
+  &:hover {
+    color: #ffcc00;
+  }
+}
+
 section {
   #title {
     margin: 0 0 5px 0;
