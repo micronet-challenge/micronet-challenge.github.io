@@ -21,7 +21,7 @@ Contestants may work together in teams, but each individual is only allowed thre
 
 [_CIFAR-100 Classification:_](https://www.cs.toronto.edu/~kriz/cifar.html) A widely popular image classification dataset of small images. The dataset is composed of 50,000 training images and 10,000 development images. Entries are required to achieve 80% top-1 accuracy on the test set.
 
-[_WikiText-103 Language Modeling:_](https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/) A standard language modeling dataset that emphasizes long-term dependencies. Entries will perform the standard language modeling task, predicting the next token from the current one. The dataset is composed of 103 million training words, 217 thousand development words, and 245 thousand testing words. Entries should use the standard word-level vocabulary of 267,735 tokens. Entries are required to achieve a word-level perplexity below 35 on the test set.
+[_WikiText-103 Language Modeling:_](https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/) A language modeling dataset that emphasizes long-term dependencies. Entries will perform the standard language modeling task, predicting the next token from the current one. The dataset is composed of 103 million training words, 217 thousand development words, and 245 thousand testing words. Entries should use the standard word-level vocabulary of 267,735 tokens. Entries are required to achieve a word-level perplexity below 35 on the test set.
 
 # Important Dates
 __Submission Deadline:__ Midnight Pacific Time, September 30th, 2019.
