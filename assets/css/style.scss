@@ -28,7 +28,7 @@ a {
 section {
   #title {
     margin: 0 0 15px 0;
-    border-width: 5px;
+    text-align: center;
 
     p {
       color: #000000;
@@ -40,6 +40,7 @@ section {
       margin-top: -15px;
 
       &.center {
+        display: inline-block;
       }
     }
   }
