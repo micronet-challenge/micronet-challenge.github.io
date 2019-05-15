@@ -28,7 +28,7 @@ __Competition Start:__ We'll start accepting submissions on June 1st, 2019.
 __Submission Deadline:__ Midnight Pacific Time, September 30th, 2019.
 
 # Contact Us
-Feel free to reach contact us at <micronet.challenge@gmail.com> with any questions you might have.
+Feel free to contact us at <micronet.challenge@gmail.com> with any questions you might have.
 
 # Organizers
 Trevor Gale - Google Brain
