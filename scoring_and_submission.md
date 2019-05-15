@@ -41,9 +41,7 @@ To submit, email a link to your GitHub repository to <micronet.challenge@gmail.c
 
 # Appendix
 
-_Maximum Transient Activation Size_
-
-When performing inference, our ability to keep activations and weights in fast, on-chip memory can be a key factor in the runtime of our model. While the number of parameters that must be stored is captured by our above metrics, we do not currently take activation storage requirements into account. 
+_Maximum Transient Activation Size:_ When performing inference, our ability to keep activations and weights in fast, on-chip memory can be a key factor in the runtime of our model. While the number of parameters that must be stored is captured by our above metrics, we do not currently take activation storage requirements into account. 
 
 Our ability to keep activations on chip is governed by the maximum amount of activations that must be kept around at any point during inference, which we refer to as maximum transient activation size (MTAS). Depending on the model, and batching choices, transient activations storage can exceed parameters storage, and thus have as much, if not more, impact than parameters.
 
