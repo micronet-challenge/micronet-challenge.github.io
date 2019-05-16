@@ -36,9 +36,11 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <div class="credits left"><a href="./leaderboard">Leaderboard</a></div>
-          <div class="credits center"><a href="./index">Overview</a></div>
-          <div class="credits right"><a href="./scoring_and_submission">Scoring &amp; Submission</a></div>
+	  <div class="credits-wrapper">
+            <div class="credits left"><a href="./leaderboard">Leaderboard</a></div>
+            <div class="credits center"><a href="./index">Overview</a></div>
+            <div class="credits right"><a href="./scoring_and_submission">Scoring &amp; Submission</a></div>
+	  </div>
         </div>
 
         {{ content }}
