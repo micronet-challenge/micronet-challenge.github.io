@@ -46,31 +46,24 @@ section {
         text-align: left;
         @media print, screen and (max-width: 480px) {
 	  text-align: center;
+	  vertical-align: middle;
 	}
       }     
+
+     &.center {
+        @media print, screen and (max-width: 480px) {
+	  vertical-align: middle;
+	}
+     }
 
       &.right {
         text-align: right;
         @media print, screen and (max-width: 480px) {
 	  text-align: center;
+	  float: none;
+	  vertical-align: middle;
 	}
       }     
     }
   }
 }
-
-/* @media print, screen and (max-width: 720px) { */
-
-/*  #title { */
-/*    .credits { */
-/*      line-height: 30px; */
-/*      text-align: center; */
-/*      float: none; */
-/*      display: block; */
-
-/*      .center { */
-/*        vertical-align: center; */
-/*      } */
-/*    } */
-/*  } */
-/*} */
