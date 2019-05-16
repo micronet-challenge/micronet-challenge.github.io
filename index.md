@@ -33,10 +33,10 @@ Feel free to contact us at <micronet.challenge@gmail.com> with any questions you
 # Organizers
 Trevor Gale - Google Brain  
 Erich Elsen - DeepMind  
+Sara Hooker - Google Brain  
 Olivier Temam - DeepMind  
 Scott Gray - OpenAI  
 Jongsoo Park - Facebook  
 Cliff Young - Google Brain  
-Sara Hooker - Google Brain  
 Niki Parmar - Google Brain  
 Ashish Vaswani - Google Brain
