@@ -37,7 +37,7 @@ For WikiText-103, these metrics will be normalized relative to the LSTM model pr
 
 Participants must submit their code, final checkpoint, and a writeup on their approach through a public GitHub repository. The writeup must include details on the approach as well as documentation on how to reproduce the results using the provided code. Test set performance with the provided checkpoint will be verified to ensure reproducibility. __Test set performance should be easily verifiable with the provided code and checkpoint.__ When submitting an entry, contestants are required to calculate the two scoring metrics for their entries and __thoroughly document their calculation__. Calculations for top entries will be manually verified by the organizers.
 
-To submit, email a link to your GitHub repository to <micronet.challenge@gmail.com>.
+To submit, email a link to your GitHub repository to <micronet.challenge@gmail.com>. Please see the full eligibility and participation terms [here](./micronet_global_terms.pdf).
 
 # Appendix
 
