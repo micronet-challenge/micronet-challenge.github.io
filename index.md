@@ -31,7 +31,7 @@ __Submission Deadline:__ Midnight Pacific Time, September 30th, 2019.
 Feel free to contact us at <micronet.challenge@gmail.com> with any questions you might have.
 
 # Organizers
-Trevor Gale - Google Brain
+Trevor Gale - Google Brain  
 Erich Elsen - DeepMind  
 Olivier Temam - DeepMind  
 Scott Gray - OpenAI  
