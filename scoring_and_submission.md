@@ -14,7 +14,7 @@ Parameter efficiency is also an important metric from a modeling perspective, as
 
 __2. Math Operations:__
 
-_Definition & Counting:_ The mean number of arithmetic operations per example required to perform inference on the test set. Multiplies and additions count separately. Transcendental function evaluations and bitwise operations count as one op. 
+_Definition & Counting:_ The mean number of arithmetic operations per example required to perform inference on the test set. Multiplies and additions count separately. Transcendental function evaluations and bitwise operations count as one op. Activation sparsity (e.g., from ReLU activation functions) should not be taken into account.
 
 Entries are allowed to assume that their models are quantized to 16-bits at no accuracy penalty. That is to say, entrants can calculate math operations for their models as if it were quantized to 16-bits without actually doing the quantization. A 16-bit operation counts as one operation. If quantization is performed, an operation on data of less than 16-bits will be counted as a fraction of one operation, where the numerator is the maximum number of bits in the inputs of the operation and the denominator is 16. For example, a multiplication operation with one 3-bit and one 5-bit input, with a 7-bit output, will count as 5/16th of an operation. A multiplication operation where one input is 16-bits, the other input is 8-bits and the output is 8-bits will count as one whole op, as the first input is 16-bits.
 
@@ -23,6 +23,8 @@ For WikiText-103, numbers can be calculated on the tokenized version of the test
 _Rationale:_ The number and resolution (bit-width of operands) of mathematical operations dictates how much work has to be done at inference time. Reduced precision can be exploited to save power and chip area.
 
 We count transcendental functions as a single operation under the assumption that they can be accelerated by hardware if necessary.
+
+We do not take activation sparsity into account because we do not take activation storage size into account. Thus, we cannot incorporate the storage and bandwidth cost of storing activations as sparse tensors into a submission’s score. In future iterations of the competition, we plan to include a metric for maximum transient activation size (see appendix) and will allow entries to take activation sparsity into account.
 
 # Ranking Entries
 
