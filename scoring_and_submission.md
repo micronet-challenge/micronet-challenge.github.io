@@ -32,14 +32,13 @@ Entries that finish in the top 10% of one of these metrics will earn the distinc
 
 For ImageNet and CIFAR-100, parameter storage, and compute requirements will be normalized relative to [MobileNetV2](https://arxiv.org/pdf/1801.04381.pdf) with width 1.4 (6.9M parameters, 1170M math operations). For example, an ImageNet submission that has 3 million parameters and 500 million math operations will have a final score of 3M / 6.9M + 500M / 1170M = .862.
 
-For WikiText-103, these metrics will be normalized relative to the LSTM model presented [here](https://arxiv.org/pdf/1803.10049.pdf). This model uses a single-layer LSTM with 2048 hidden units, tied embedding and softmax parameters with dimension 512, and a weight tied linear projection to/from the embedding/softmax width of 512 to the LSTM width of 2048. In total, it has 172M parameters, and 345M math operations. 
-
+For WikiText-103, these metrics will be normalized relative to the LSTM model presented [here](https://arxiv.org/pdf/1803.10049.pdf). This model uses a single-layer LSTM with 2048 hidden units, tied embedding and softmax parameters with dimension 512, and a linear projection to the embedding/softmax width of 512 from the LSTM width of 2048. In total, it has 159M parameters, and 318M math operations. 
 
 # Submitting
 
-Participants must submit their code, final checkpoint, and a writeup on their approach through a public GitHub repository. The writeup must include details on the approach as well as documentation on how to reproduce the results using the provided code. Test set performance with the provided checkpoint will be verified to ensure reproducibility. __Test set performance should be easily verifiable with the provided code and checkpoint.__ When submitting an entry, contestants are required to calculate the two scoring metrics for their entries and __thoroughly document their calculation__. Calculations for top entries will be manually verified by the organizers.
+Participants must submit their code, final checkpoint, and a writeup on their approach through a private GitHub repository. __The repository must be made public after the submission deadline passes__. The writeup must include details on the approach as well as documentation on how to reproduce the results using the provided code. Test set performance with the provided checkpoint will be verified to ensure reproducibility. __Test set performance should be easily verifiable with the provided code and checkpoint__. When submitting an entry, contestants are required to calculate the two scoring metrics for their entries and __thoroughly document their calculation__. Calculations for top entries will be manually verified by the organizers.
 
-To submit, email a link to your GitHub repository to <micronet.challenge@gmail.com>. Please see the full eligibility and participation terms [here](./micronet_global_terms.pdf).
+To submit, add [micronet-challenge-submissions](https://github.com/micronet-challenge-submissions) as a collaborator on your GitHub repository. Please see the full eligibility and participation terms [here](./micronet_global_terms.pdf).
 
 # Appendix
 

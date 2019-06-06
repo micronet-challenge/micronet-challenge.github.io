@@ -1,5 +1,7 @@
 # Announcements
-We have Google Cloud TPU credits available for the first 25 participants that submit a proposal! 1-page limit. Describe what you’d like to do for your entry, and email your proposals to <micronet.challenge@gmail.com>.
+1. We have Google Cloud TPU credits available for the first 25 participants that submit a proposal! 1-page limit. Describe what you’d like to do for your entry, and email your proposals to <micronet.challenge@gmail.com>.
+
+2. Join the MicroNet Challenge Google Group to chat with other competitors ([link](https://bit.ly/2ZdSYun))!
 
 # Overview
 Contestants will compete to build the most efficient model that solves the target task to the specified quality level. The competition is focused on efficient inference, and uses a theoretical metric rather than measured inference speed to score entries. We hope that this encourages a mix of submissions that are useful on today’s hardware and that will also guide the direction of new hardware development.
