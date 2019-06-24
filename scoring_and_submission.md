@@ -28,7 +28,7 @@ We do not take dynamic activation sparsity into account because we do not take a
 
 We allow static activation sparsity (e.g., [sparse attention](https://openai.com/blog/sparse-transformer/)) because the sparsity pattern is known ahead of time and we can avoid expensive dynamic compression of layer outputs and potentially mitigate load-balancing issues.
 
-Note that this rule against dynamic activation sparsity is not intended to rule out [mixture-of-experts](https://arxiv.org/abs/1701.06538) (MoE) approaches, which could be viewed as a form of dynamic activation sparsity. If you’re interested in entering the competition with MoE model, reach out to the organizers at <micronet.challenge@gmail.com>.
+Note that this restriction on dynamic activation sparsity is not intended to rule out [mixture-of-experts](https://arxiv.org/abs/1701.06538) (MoE) approaches, which could be viewed as a form of dynamic activation sparsity. If you’re interested in entering the competition with MoE model, reach out to the organizers at <micronet.challenge@gmail.com>.
 
 # Ranking Entries
 
