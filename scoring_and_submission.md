@@ -44,6 +44,16 @@ Participants must submit their code, final checkpoint, and a writeup on their ap
 
 To submit, add [micronet-challenge-submissions](https://github.com/micronet-challenge-submissions) as a collaborator on your GitHub repository. Please see the full eligibility and participation terms [here](./micronet_global_terms.pdf).
 
+# Frequently Asked Questions
+
+_Am I allowed to use data augmentation when training my model?_
+
+Data augmentation (e.g., random mirroring, color transforms, random cropping, etc.) is allowed. The only constraint on the training data is that it must only come from the training dataset of the task that the model will be entered in. This means that [AutoAugment](https://arxiv.org/pdf/1805.09501.pdf) and similar approaches are allowed, but the policies should not be learned on data that is not the training data for the task that the model will be entered in (e.g., you should not use the CIFAR10 AutoAugment policy for CIFAR100).
+
+_How should I count permutations of data like those used in [ShuffleNet](https://arxiv.org/pdf/1805.09501.pdf)?_
+
+Arbitrary permutations of data in a tensor can be expressed through the product of the tensor with a [permutation matrix](https://en.wikipedia.org/wiki/Permutation_matrix). Permutation matrices are massively sparse, and thus an arbitrary permutation can be expressed as a sparse matrix-matrix product. For math operations, an arbitrary permutation should be counted towards a model’s score as the product of a dense matrix and a sparse permutation matrix. For parameter storage, the cost of storing the sparse permutation matrix should be taken into account.
+
 # Appendix
 
 _Maximum Transient Activation Size:_ When performing inference, our ability to keep activations and weights in fast, on-chip memory can be a key factor in the runtime of our model. While the number of parameters that must be stored is captured by our above metrics, we do not currently take activation storage requirements into account. 
