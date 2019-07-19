@@ -54,6 +54,10 @@ _How should I count permutations of data like those used in [ShuffleNet](https:/
 
 Arbitrary permutations of data in a tensor can be expressed through the product of the tensor with a [permutation matrix](https://en.wikipedia.org/wiki/Permutation_matrix). Permutation matrices are massively sparse, and thus an arbitrary permutation can be expressed as a sparse matrix-matrix product. For math operations, an arbitrary permutation should be counted towards a model’s score as the product of a dense matrix and a sparse permutation matrix. For parameter storage, the cost of storing the sparse permutation matrix should be taken into account.
 
+_Are the Quality Targets for Each Task Hard Thresholds?_
+
+Yes, the quality targets listed for each task are hard thresholds, i.e. entries must achieve at or above the specified accuracy without rounding. For ImageNet, this entails correctly classifying 37,500 out of the 50,000 validation images. For CIFAR100, this entails correctly classifying 8,000 out of the 10,000 validation images. For WikiText-103, models must achieve a test set perplexity of 35 or below.
+
 # Appendix
 
 _Maximum Transient Activation Size:_ When performing inference, our ability to keep activations and weights in fast, on-chip memory can be a key factor in the runtime of our model. While the number of parameters that must be stored is captured by our above metrics, we do not currently take activation storage requirements into account. 
