@@ -41,5 +41,6 @@ Olivier Temam - DeepMind
 Scott Gray - OpenAI  
 Jongsoo Park - Facebook  
 Cliff Young - Google Research  
+Utku Evci - Google Research  
 Niki Parmar - Google Research  
 Ashish Vaswani - Google Research  
