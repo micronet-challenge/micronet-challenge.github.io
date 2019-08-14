@@ -48,7 +48,7 @@ For ImageNet and CIFAR-100, parameter storage, and compute requirements will be 
 
 For WikiText-103, these metrics will be normalized relative to the LSTM model presented [here](https://arxiv.org/pdf/1803.10049.pdf). This model uses a single-layer LSTM with 2048 hidden units, tied embedding and softmax parameters with dimension 512, and a linear projection to the embedding/softmax width of 512 from the LSTM width of 2048. In total, it has 159M parameters, and 318M math operations. 
 
-Evaluation
+# Evaluation
 
 When evaluating a quantized model, inputs to operations that are to be calculated using reduced precision arithmetic should be properly stored in the reduced precision format. For fixed-point and floating-point formats that can be exactly represented by a 32-bit IEEE 754 floating point number (INT8, FP8, INT4, etc.) we allow these operations to be simulated by converting the inputs to FP32 and executing standard floating-point math operations.
 
