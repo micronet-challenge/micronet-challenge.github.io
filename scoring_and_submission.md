@@ -44,7 +44,9 @@ Similar to the quantization scoring procedure for parameter storage, we allow �
 
 Entries that finish in the top 10% of one of these metrics will earn the distinction of a “highly storage-efficient solution” or “highly compute-efficient solution” for parameter storage and math operations respectively. To select overall winners for each task, we will rank entries based on the sum of these two values, with each value normalized by a baseline state-of-the-art model for the task. The entry with the lowest overall score for each task will be declared the winner.
 
-For ImageNet and CIFAR-100, parameter storage, and compute requirements will be normalized relative to [MobileNetV2](https://arxiv.org/pdf/1801.04381.pdf) with width 1.4 (6.9M parameters, 1170M math operations). For example, an ImageNet submission that has 3 million parameters and 500 million math operations will have a final score of 3M / 6.9M + 500M / 1170M = .862.
+For ImageNet, parameter storage and compute requirements will be normalized relative to [MobileNetV2](https://arxiv.org/pdf/1801.04381.pdf) with width 1.4 (6.9M parameters, 1170M math operations). For example, an ImageNet submission that has 3 million parameters and 500 million math operations will have a final score of 3M / 6.9M + 500M / 1170M = .862.
+
+For CIFAR-100, parameter storage and compute requirements will be normalized relative to [WideResNet-28-10](https://arxiv.org/pdf/1605.07146.pdf), which has 36.5M parameters and 10.49B math operations.
 
 For WikiText-103, these metrics will be normalized relative to the LSTM model presented [here](https://arxiv.org/pdf/1803.10049.pdf). This model uses a single-layer LSTM with 2048 hidden units, tied embedding and softmax parameters with dimension 512, and a linear projection to the embedding/softmax width of 512 from the LSTM width of 2048. In total, it has 159M parameters, and 318M math operations. 
 
