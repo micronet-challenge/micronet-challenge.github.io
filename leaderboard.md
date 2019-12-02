@@ -72,5 +72,7 @@ Final rankings for the 2019 MicroNet Challenge. Entries marked as "verified" wer
 |     JNLP    |         JAIST/ISM         | WT103 | [link](https://github.com/binhdt95/Jaist-MicroNet-Challenge) |     0.8232     |    Yes   |
 
 *Did not meet required accuracy target for the task
+
 PunyNet CIFAR-100 entry achieved 53.39% top-1 accuracy
+
 DQStarter ImageNet entry achieved 74.962% top-1
