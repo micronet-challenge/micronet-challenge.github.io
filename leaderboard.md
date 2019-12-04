@@ -1,5 +1,5 @@
 # Leaderboard
-Final rankings for the 2019 MicroNet Challenge. Within each task we recognize entries that finished in the top 10% of our parameter storage and math operation metrics as "Highly Storage Efficient" and "Highly Compute Efficient" respectively. These distinctions are marked by superscript "S" and "C" for storage and computation respectively. Entries marked as "verified" were manually reviewed by the organizers for correctness. All entries achieved the specified accuracy threshold for the task unless otherwise specified.
+Final rankings for the 2019 MicroNet Challenge. Within each task, we recognize entries that finished in the top 10% of our parameter storage and math operation metrics as "Highly Storage Efficient" and "Highly Compute Efficient" respectively. These distinctions are marked by superscript "S" and "C" for storage and computation respectively. Entries marked as "verified" were manually reviewed by the organizers for correctness. All entries achieved the specified accuracy threshold for the task unless otherwise specified.
 
 # ImageNet
 
