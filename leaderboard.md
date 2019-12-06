@@ -42,13 +42,13 @@ Final rankings for the 2019 MicroNet Challenge. Within each task, we recognize e
 |       HHI-MAL       |                 Fraunhofer Heinrich Hertz Institute                |      [link](https://github.com/d-becking/neurips-2019-micronet-challenge)     |     0.0242     |    Yes   |
 |        Woody        |  Northestern University, Indiana Univeristy, MIT-IBM Watson AI Lab |            [link](https://github.com/LinLabNEU/reweighted_pruning5)           |     0.0266     |    Yes   |
 |    MB-PM Research   |                                                                    |         [link](https://github.com/mb-pm/micronet-cifar100-submissions)        |     0.0384     |          |
+|       WaveComp      |                           Wave Computing                           |                  [link](https://github.com/mhariat/MicroNet)                  |     0.0456     |          |
+|       WaveComp      |                           Wave Computing                           |                  [link](https://github.com/mhariat/MicroNet)                  |     0.0464     |          |
+|       WaveComp      |                           Wave Computing                           |                  [link](https://github.com/mhariat/MicroNet)                  |     0.0467     |          |
 |        Sloth        |                                                                    |              [link](https://github.com/Flash-engine/Mixnet-quant)             |     0.0618     |          |
 |    MB-PM Research   |                                                                    |         [link](https://github.com/mb-pm/micronet-cifar100-submissions)        |     0.0653     |          |
 |  QualcommAI-nanoWRN |                        Qualcomm AI Research                        | [link](https://github.com/yashbhalgat/QualcommAI-MicroNet-submission-nanoWRN) |     0.0721     |          |
 |        BrAIn        |                           IMT Atlantique                           |                 [link](https://github.com/cadurosar/Micronet)                 |     0.0780     |          |
-|       WaveComp      |                           Wave Computing                           |                  [link](https://github.com/mhariat/MicroNet)                  |     0.0794     |          |
-|       WaveComp      |                           Wave Computing                           |                  [link](https://github.com/mhariat/MicroNet)                  |     0.0794     |          |
-|       WaveComp      |                           Wave Computing                           |                  [link](https://github.com/mhariat/MicroNet)                  |     0.0830     |          |
 |        UCI-M        |                  University of California, Irvine                  |             [link](https://github.com/madokaminami/UCI-CIFAR-100)             |     0.1114     |          |
 |  AutoPrune (A*STAR) |                                                                    |       [link](https://github.com/manasgupta-1/MicroNet-Submission-A-STAR)      |     0.1118     |          |
 |        UCI-M        |                  University of California, Irvine                  |             [link](https://github.com/madokaminami/UCI-CIFAR-100)             |     0.1254     |          |
